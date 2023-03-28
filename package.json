@@ -1,0 +1,16 @@
+{
+  "name": "wiutteachersdbapp-",
+  "version": "1.0.0",
+  "description": "Web application to manage Wiut Teachers database system.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w index.js"
+  },
+  "author": "00013712@wiut.uz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  }
+}
