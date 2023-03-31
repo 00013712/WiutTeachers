@@ -1,0 +1,148 @@
+:root {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 27px;
+    color: black;
+}
+
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;   
+}
+
+a:hover{
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    border: 2px solid black;
+    border: 2px solid black;
+}
+
+.navbar{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 3px dotted #ccc;
+    padding: 10px;
+}
+.nav a{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* Home page style*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro{
+    color:dimgray;
+    font-size: 2rem;
+    max-width: 70%;
+    padding: 100px 0 40px 0;
+}
+a.featured{
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    padding: 10px;
+    background: brown;
+    color: white;
+    border-radius: 10px;
+}
+a.featured:hover{
+    border: 2px bold black;
+    font-size: larger;
+    border-bottom: 5px solid black;
+}
+
+/*Add a new teacher styles (Create)*/
+.form{
+    max-width: 100%;
+}
+
+.input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    display: inline-block;
+    background: brown;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.btn:hover{
+    background: green;
+    border: 2px solid black;
+}
+
+/*teachers styles */
+.teacher-wrapper{
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+} 
+
+.teacher{
+    font-size: 1.3rem;
+    background-color: none;
+
+}
+
+.delete{
+    display: inline-block;
+    padding: 10px;
+    background: brown;
+    color: white;
+    border-radius: 10px;
+}
+
+.delete:hover{
+    font-size: larger;
+    border-bottom: 5px solid black;
+}
+
+/*error*/
+
+.error{
+    color: red;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 1.2rem;
+}
+
+/*success*/
+
+.success{
+    color: green;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+    font-size: 1.2rem;
+}

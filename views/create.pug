@@ -1,4 +1,39 @@
-extends home.pug 
+extends layout.pug 
 
 block content 
-    .container Hello Friend  Mr. Robot
+    .container 
+        h2 Add a new teacher
+
+        if error
+            p.error Some error occured, please try again.
+
+        if success
+            p.success Teacher added successfully! 
+
+        form.form(action="/add" method='POST')
+
+            label First Name:
+            input(type="text" name='firstname')
+            br
+            
+            label Last Name:
+            input(type="text" name='secondname')
+            br
+            label Age:
+            input(type="number" name='age')
+            br
+
+            label Email address:
+            input(type="text" name='emailaddress')
+            br
+
+            label Major:
+                select(name="major")
+                    option(value="claw") Commercial law 
+                    option(value="ecofin") Economics with finance
+                    option(value="fin") Finance
+                    option(value="busmag") Bussiness Managment
+                    option(value="bis") Bussiness Information System 
+            br
+
+            button.btn Add a teacher
