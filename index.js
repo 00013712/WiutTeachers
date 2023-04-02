@@ -20,6 +20,16 @@ app.get('/add', (req, res) => {
 	res.render('create')
 })
 
+app.get('/api/v1/teachers', (req, res) => {
+	fs.readFile('./data/teachers.json', (err, data) => {
+		if (err) throw err
+
+		const teachers = JSON.parse(data)
+
+		res.json(teachers)
+	})
+})
+
 app.post('/add', (req, res) => {
 	const firstname = req.body.firstname
 	const secondname = req.body.secondname

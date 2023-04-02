@@ -4,7 +4,7 @@
   "description": "Web application to manage Wiut Teachers database system.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w index.js"
+    "start": "nodemon -w index.js, or (node index.js)"
   },
   "author": "00013712@wiut.uz",
   "license": "ISC",
