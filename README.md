@@ -25,4 +25,4 @@ node index
 - pug.js
 
 ### Web application repository
-[link to github repo ] (https://github.com/00013712/WiutTeachers.git)
+[link to github repo](https://github.com/00013712/WiutTeachers.git)
