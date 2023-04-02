@@ -6,7 +6,7 @@ To run this web application locally you must follow the steps indicated below:
 
 1. Clone this repository
 ```bash
-git clone (https://github.com/00013712/WiutTeachers.git)
+git clone https://github.com/00013712/WiutTeachers.git
 ```
 
 2. Install dependencies
