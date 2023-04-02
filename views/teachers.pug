@@ -4,7 +4,14 @@ block content
     .container 
         h1 All teachers
 
+        if edited 
+            p.edited Changes saved successfully! 
+        if deleted 
+            p.deleted Data deleted successfully! 
+        if error
+            p.error None of the fields should be empty! 
+
         each teacher in teachers 
             div.teacher-wrapper
-                a.teacher(href=`/teachers/${ teachers.id }`)= teacher.firstname + " " + teacher.secondname
-                a.delete(href='#') Delete
+                a.teacher(href=`/teachers/${ teacher.id }`)= teacher.firstname + " " + teacher.secondname
+                a.delete(href=`/${teacher.id}/delete`) Delete

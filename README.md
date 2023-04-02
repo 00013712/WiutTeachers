@@ -1,0 +1,27 @@
+# Web application to manage Wiut Teachers database system.
+
+### This web application allow users to create, delete and edit teachers data.
+
+To run this web application locally you must follow the steps indicated below:
+
+1. Clone tis repository
+```bash
+git clone [https://github.com/00013712/WiutTeachers.git]
+```
+
+2. Install dependencies
+```bash
+cd WiutTeachersDBApp
+npm install
+```
+
+3. Run the application
+```bash
+node index
+```
+
+### Web application dependencies
+- express.js
+- pug.js
+
+

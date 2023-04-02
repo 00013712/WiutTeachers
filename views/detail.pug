@@ -2,6 +2,58 @@ extends layout.pug
     
 block content
     div.container 
-        h3.title #{teacher.title}
-        p.form-detail #{teacehr.form-detail}
+        form.form(action=`/${teacher.id}/edit` method='POST')
+
+            label First Name:
+            input(type="text" name='firstname' value=`${teacher.firstname}`)
+            br
+            
+            label Last Name:
+            input(type="text" name='secondname' value=`${teacher.secondname}` )
+            br
+            label Age:
+            input(type="number" name='age' value=`${teacher.age}`)
+            br
+
+            label Email address:
+            input(type="text" name='emailaddress' value=`${teacher.emailaddress}`)
+            br
+
+            label Major:
+                select(name="major")
+                    if teacher.major === "claw"
+                        option(value="claw" selected) Commercial law 
+                        option(value="ecofin") Economics with finance
+                        option(value="fin") Finance
+                        option(value="busmag") Bussiness Managment
+                        option(value="bis") Bussiness Information System 
+                    else if teacher.major === "ecofin"
+                        option(value="claw") Commercial law 
+                        option(value="ecofin" selected) Economics with finance
+                        option(value="fin") Finance
+                        option(value="busmag") Bussiness Managment
+                        option(value="bis") Bussiness Information System
+                    else if teacher.major === "fin"
+                        option(value="claw" ) Commercial law 
+                        option(value="ecofin") Economics with finance
+                        option(value="fin" selected) Finance
+                        option(value="busmag") Bussiness Managment
+                        option(value="bis") Bussiness Information System 
+                    else if teacher.major === "busmag"
+                        option(value="claw") Commercial law 
+                        option(value="ecofin") Economics with finance
+                        option(value="fin") Finance
+                        option(value="busmag" selected) Bussiness Managment
+                        option(value="bis") Bussiness Information System
+                    else if teacher.major === "bis"
+                        option(value="claw") Commercial law 
+                        option(value="ecofin") Economics with finance
+                        option(value="fin") Finance
+                        option(value="busmag") Bussiness Managment
+                        option(value="bis" selected) Bussiness Information System  
+            br
+            br
+            div.save_changes 
+                button.save_changes_btn Save changes 
+                a.btn_delete_data(href=`/${teacher.id}/delete`) Delete data 
         

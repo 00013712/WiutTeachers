@@ -1,6 +1,6 @@
 :root {
     font-family:'Times New Roman', Times, serif;
-    font-size: 27px;
+    font-size: 22px;
     color: black;
 }
 
@@ -20,7 +20,6 @@ a:hover{
     color: white;
     background-color: brown;
     border-radius: 10px;
-    border: 2px solid black;
     border: 2px solid black;
 }
 
@@ -50,9 +49,9 @@ a:hover{
 
 .intro{
     color:dimgray;
-    font-size: 2rem;
-    max-width: 70%;
-    padding: 100px 0 40px 0;
+    font-size: 1.8rem;
+    max-width: 100%;
+    padding: 40px 0;
 }
 a.featured{
     margin: 10px;
@@ -72,6 +71,7 @@ a.featured:hover{
 /*Add a new teacher styles (Create)*/
 .form{
     max-width: 100%;
+    font-size: 1.2rem;
 }
 
 .input{
@@ -138,11 +138,68 @@ a.featured:hover{
 }
 
 /*success*/
-
 .success{
     color: green;
     display: inline-block;
     padding: 10px;
     border: 1px solid green;
     font-size: 1.2rem;
+}
+
+/*deleted*/
+.deleted{
+    color: red;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 1.2rem;
+}
+
+/*edited*/
+.edited{
+    color: green;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+    font-size: 1.2rem;
+}
+
+/* Save changes button*/
+.save_changes{
+    padding: 5px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+.save_changes_btn{
+    display: inline-block;
+    background-color:darkgreen ;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px ;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.save_changes_btn:hover{
+    background-color:mediumseagreen;
+    font-size: larger;
+    border-bottom: 5px solid black;
+}
+.btn_delete_data{
+    display: inline-block;
+    background: brown;
+    color: white;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 0 80px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.btn_delete_data:hover{
+    background-color: red;
+    font-size: larger;
+    border-bottom: 5px solid black;
 }
