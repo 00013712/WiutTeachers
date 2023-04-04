@@ -26,3 +26,6 @@ node index
 
 ### Web application repository
 [link to github repo](https://github.com/00013712/WiutTeachers.git)
+
+### Glitch hosting of web application
+[link to the web app](https://shrub-five-strand.glitch.me/)
