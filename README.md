@@ -28,4 +28,4 @@ node index
 [link to github repo](https://github.com/00013712/WiutTeachers.git)
 
 ### Glitch hosting of web application
-[link to the web app](https://shrub-five-strand.glitch.me/)
+[link to the web app](https://bow-navy-ounce.glitch.me/)
